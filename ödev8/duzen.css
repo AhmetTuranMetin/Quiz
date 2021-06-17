@@ -1,0 +1,127 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #008b8b;
+    margin: 0;
+}
+
+header{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #121212;
+    border-bottom: 2px groove #a9a9a9;
+}
+
+h1{
+    margin-left: 2%;
+}
+
+.puan, .time{
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    font-size: 150%;
+    margin-top: 2%;
+    color: #a9a9a9;
+}
+.puan #skor, .time #sayac{
+    margin-top: 2%;
+}
+
+.time{
+    margin-top: 4%;
+}
+
+.soru_alani{
+    display: inline-table;
+    border-radius: 2px;
+    margin-left: 20%;
+    margin-top: -18%;
+    max-width: 50%;
+    float: left;
+}
+
+.basla{
+    display: flex;
+    max-width: 25%;
+    margin-left: 72%;
+    margin-top: -18%;
+    flex-direction: column;
+}
+.basla #cevap{
+    border-bottom: 2px solid #a9a9a9;
+    max-width: 100%;
+    padding-bottom: 5%;
+    color: #a9a9a9;
+}
+.basla #basla_btn, .basla #restart{
+    width: 75%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    max-width: 75%;
+    max-height: 50px;
+    background-color: #87cefa;
+    color: #000080;
+    font-size: 180%;
+    margin-left: 14%;
+    cursor: pointer;
+    margin-top: 10%;
+}
+.basla #basla_btn:hover, .basla #restart:hover{
+    border: 2px solid black;
+}
+
+footer{
+    margin-top: 30%;
+    text-align: center;
+    border-top: 2px groove #a9a9a9;
+}
+
+h2{
+    color: #a9a9a9;
+    font-size: 100%;
+}
+
+img{
+    border-radius: 20px;
+}
+
+.soru_alani #yazi_alani{
+    display: inline-table;
+    background-color: #2f4f4f;
+    border-radius: 7px;
+    color: #fffafa;
+    padding: 2%;
+    font-size: 120%;
+}
+
+.basla #secenek_alani button{
+    width: 75%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    max-width: 75%;
+    max-height: 50px;
+    font-size: 180%;
+    margin-left: 14%;
+    background-color: #000080;
+    padding: 2%;
+    margin: 7%;
+    color: orange;
+    cursor: default;
+}
+.basla #secenek_alani button:hover{
+    background-color: #3232f1;
+}
+.basla #secenek_alani #dogru:focus{
+    background-color: #006400;
+}
+.basla #secenek_alani #yanlis1:focus, .basla #secenek_alani #yanlis2:focus, .basla #secenek_alani #yanlis3:focus, .basla #secenek_alani #yanlis4:focus{
+    background-color: #8b0000;
+}
+
+#son{
+    margin-top: 10%;
+}
